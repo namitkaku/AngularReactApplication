@@ -1,0 +1,29 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { AdminRoutingModule } from './admin-routing.module';
+import { LoginComponent } from './Components/login/login.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { LayoutComponent } from './Components/layout/layout.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { SidebarComponent } from './Components/sidebar/sidebar.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { AddusersComponent } from './Components/addusers/addusers.component';
+
+
+@NgModule({
+  declarations: [
+    LoginComponent,
+    DashboardComponent,
+    LayoutComponent,
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent,
+    AddusersComponent
+  ],
+  imports: [
+    CommonModule,
+    AdminRoutingModule
+  ]
+})
+export class AdminModule { }
